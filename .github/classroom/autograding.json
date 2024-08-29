@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "Sample 00",
+      "setup": "chmod 777 ./src/gwiyomi.*",
+      "run": "./src/gwiyomi.py ./data/sample_00.txt",
+      "input": "",
+      "output": "D",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "Sample 01",
+      "setup": "chmod 777 ./src/gwiyomi.*",
+      "run": "./src/gwiyomi.py ./data/sample_01.txt",
+      "input": "",
+      "output": "C",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Sample 02",
+      "setup": "chmod 777 ./src/gwiyomi.*",
+      "run": "./src/gwiyomi.py ./data/sample_02.txt",
+      "input": "",
+      "output": "C",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 3
+    },
+    {
+      "name": "Sample 03",
+      "setup": "chmod 777 ./src/gwiyomi.*",
+      "run": "./src/gwiyomi.py ./data/sample_03.txt",
+      "input": "",
+      "output": "C",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 4
+    },
+    {
+      "name": "Sample 04",
+      "setup": "chmod 777 ./src/gwiyomi.*",
+      "run": "./src/gwiyomi.py ./data/sample_04.txt",
+      "input": "",
+      "output": "C",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Instructors Test Case Large",
+      "setup": "chmod 777 ./src/gwiyomi.*; git clone https://github.com/7imeout/GradingResources.git",
+      "run": "./src/gwiyomi.py ./GradingResources/cs128/test_large.txt",
+      "input": "",
+      "output": "🌻",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Instructors Test Case Oneoff",
+      "setup": "chmod 777 ./src/gwiyomi.*",
+      "run": "./src/gwiyomi.py ./GradingResources/cs128/test_oneoff.txt",
+      "input": "",
+      "output": "다",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 5
+    },
+    {
+      "name": "Instructors Test Case Small",
+      "setup": "chmod 777 ./src/gwiyomi.*",
+      "run": "./src/gwiyomi.py ./GradingResources/cs128/test_small.txt",
+      "input": "",
+      "output": "α",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 5
+    }
+  ]
+}
